@@ -6,12 +6,12 @@
 <p align="center"><strong>Fullstack Developer · Bantul, D.I. Yogyakarta</strong><br>Building things. Clearing lines.</p>
 
 <p align="center">
-  <a href="arcade/index.html"><img src="assets/play-tetris.svg" alt="Play Tetris — buka halaman arcade" width="220" height="56"></a>
+  <a href="https://github.com/rapurbae/rapurbae/actions/runs/42673258636"><img src="assets/play-tetris.svg" alt="Tetris — lihat status deployment game" width="220" height="56"></a>
 </p>
 
-<p align="center"><sub>Game berjalan di halaman web terpisah, bukan di README GitHub.</sub><br><a href="assets/tetris-poster.png">Lihat banner statis tanpa animasi</a></p>
+<p align="center"><sub>Game sedang menunggu deployment GitHub Pages. Tombol di atas membuka status deployment sementara.<br>Game berjalan di halaman web terpisah, bukan di README GitHub.</sub><br><a href="assets/tetris-poster.png">Lihat banner statis tanpa animasi</a></p>
 
-<!-- Sebelum publikasi: ganti href tombol Play di atas dengan URL GitHub Pages yang sudah diverifikasi. Saat ini tautan relatif dipakai untuk preview lokal. -->
+<!-- Ganti tautan tombol dengan alamat game setelah deployment selesai dan URL terverifikasi. -->
 
 ## 01 / Meet the player
 
