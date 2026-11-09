@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="Main Tetris di arcade Asraf Fahruddin — Fullstack Developer dari Bantul, Yogyakarta.">
+  <title>RAPURBAE / Tetris Arcade</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="game.js"></script>
+</head>
+<body>
+  <a class="skip" href="#board">Lewati ke permainan</a>
+  <div id="arcade">
+    <header class="topbar">
+      <a class="brand" href="https://github.com/rapurbae" aria-label="Profil GitHub rapurbae"><span class="brand-mark" aria-hidden="true">▦</span> RAPURBAE <span class="muted">/ ARCADE</span></a>
+      <a class="text-link" href="https://github.com/rapurbae">Kembali ke GitHub ↗</a>
+    </header>
+    <main>
+      <div class="intro"><div><p class="eyebrow">THE DEVELOPER'S PLAYGROUND</p><h1>Building things.<br><span>Clearing lines.</span></h1></div><p class="intro-copy">Sedikit kode. Sedikit nostalgia.<br>Selamat datang di arcade saya.</p></div>
+      <div class="layout">
+        <section class="cabinet" aria-labelledby="game-title">
+          <div class="cabinet-top"><h2 id="game-title">TETRIS<span class="accent">_</span></h2><span class="live-label">1 PLAYER / FREE PLAY</span></div>
+          <div class="playfield">
+            <div id="board" tabindex="0" role="img" aria-label="Papan Tetris 10 kolom dan 20 baris" aria-describedby="keyboard-help status"></div>
+            <div id="overlay" class="overlay"><div><p class="eyebrow">NO COINS REQUIRED</p><h3 id="overlay-title">READY, PLAYER?</h3><p id="overlay-copy">Susun blok. Bersihkan baris. Pecahkan rekor.</p><button id="start" class="primary" type="button">Mulai bermain</button></div></div>
+          </div>
+          <div class="game-bar"><span id="status" role="status" aria-live="polite">Siap bermain</span><div><button id="pause" type="button" aria-pressed="false" disabled>Jeda</button><button id="restart" type="button">Mulai ulang</button></div></div>
+          <div class="touch-controls" role="group" aria-label="Kontrol permainan"><button data-action="left" type="button" aria-label="Geser kiri">←</button><button data-action="rotate" type="button" aria-label="Putar blok">↻ <span>Putar</span></button><button data-action="right" type="button" aria-label="Geser kanan">→</button><button data-action="down" type="button" aria-label="Turunkan blok">↓</button><button data-action="drop" class="drop" type="button">Jatuhkan</button></div>
+          <p id="keyboard-help" class="keyboard-help"><kbd>←</kbd> <kbd>→</kbd> geser · <kbd>↑</kbd> putar · <kbd>↓</kbd> turun<br><kbd>Space</kbd> jatuhkan · <kbd>P</kbd> jeda</p>
+        </section>
+        <aside class="sidebar" aria-label="Skor dan profil pemain">
+          <section class="panel score-panel" aria-label="Statistik permainan"><p class="eyebrow">YOUR SCORE</p><output id="score" class="score" aria-label="Skor">000000</output><div class="stats"><div><span>LEVEL</span><output id="level">01</output></div><div><span>LINES</span><output id="lines">00</output></div></div><div class="best"><span>REKOR LOKAL</span><output id="best">000000</output></div></section>
+          <section class="panel next-panel"><h3>NEXT BLOCK</h3><div id="next" role="img" aria-label="Preview blok berikutnya"></div></section>
+          <section class="panel bio"><p class="eyebrow">MEET THE PLAYER</p><h2>Asraf Fahruddin</h2><p class="role">Fullstack Developer</p><p class="muted">Bantul, D.I. Yogyakarta<br>S1 Informatika · UAD</p><span class="availability">Terbuka untuk peluang kerja</span><div class="tags"><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Tailwind CSS</span><span>Figma</span></div><div class="project"><h3>FEATURED QUEST</h3><p>Aplikasi Web DisKominfo Kota Sumedang</p><span class="muted">Fullstack Developer · Magang<br>Sep–Des 2025</span></div><a class="text-link" href="https://github.com/rapurbae/Portofolio">Repositori portofolio ↗</a><a class="text-link" href="mailto:asraffahruddin741@gmail.com">Hubungi lewat email ↗</a></section>
+        </aside>
+      </div>
+      <noscript><p class="noscript">Aktifkan JavaScript untuk memainkan Tetris. Profil tetap tersedia di <a href="https://github.com/rapurbae">GitHub rapurbae</a>.</p></noscript>
+    </main>
+    <footer><span>CODE. STACK. REPEAT.</span><span>Tanpa akun · Tanpa pelacak · Rekor di perangkat ini</span><span>Proyek penggemar independen; tidak berafiliasi dengan The Tetris Company.</span></footer>
+  </div>
+</body>
+</html>
